@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Morgan Walker UI Assignment</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+
+	<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBkFA98t11foZj_P2JKHiGiM16MEP8RBSA",
+    authDomain: "continuous-integration-ba044.firebaseapp.com",
+    projectId: "continuous-integration-ba044",
+    storageBucket: "continuous-integration-ba044.appspot.com",
+    messagingSenderId: "910223514167",
+    appId: "1:910223514167:web:e2ca29ccd1e9310d557db2",
+    measurementId: "G-5SDGV5P0BW"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+    <!-- Load React. -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Load our React component. -->
+    <script src="index.js"></script>
+
+  </body>
+</html>
